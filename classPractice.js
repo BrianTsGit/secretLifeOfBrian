@@ -60,3 +60,22 @@ class Person {
 
 const personWithClass = new Person('Kent', 'Christina');
 console.log(personWithClass);
+
+
+// BONUS EXAMPLE
+// Calling functions in the constructor
+class AnnoyingPerson {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    this.announcePresence();
+  }
+
+  announcePresence() {
+    console.log('Heyall!! ' + this.name + ' is in the buildin!!');
+  }
+}
+
+// When the constructor is called, the object's announcePresence function is called
+// Check out the console in the browser
+const keith = new AnnoyingPerson('Keith', 23);
